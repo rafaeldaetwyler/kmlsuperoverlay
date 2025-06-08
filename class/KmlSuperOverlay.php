@@ -90,13 +90,13 @@
 				*/
 			"groundOverlay" => [
 				"transparent" => [
-					"minLodPixels" => 192,
+					"minLodPixels" => 128,
 					"maxLodPixels" => 640, 
 					"minFadeExtent" => -1, 
 					"maxFadeExtent" => -1
 				],
 				"opaque" => [
-					"minLodPixels" => 256,
+					"minLodPixels" => 128,
 					"maxLodPixels" => 1024, 
 					"minFadeExtent" => -1, 
 					"maxFadeExtent" => -1
@@ -253,6 +253,8 @@
 			// Region
 			$this->kml .= self::createElement("Region", [self::createElement("LatLonAltBox",Common::assocArrayToXml(array_merge(Gis::tileEdgesArray($x,$y,$z,$this->src["projection"]), self::$altitude)))]);
 
+			$groundOverlay = "";
+			$networkLink = "";
 			$nz = $z + 1;
 			for($nx = ($x * 2); $nx <= ($x * 2) + 1; $nx++){
 				for($ny = ($y * 2); $ny <= ($y * 2) + 1; $ny++){
@@ -444,6 +446,7 @@
 		*/
 
 		private static function createElement($itemName, $items, $namevalue = null){
+			$ret = "";
 			if(!is_null($namevalue))
 				$ret .= "<name><![CDATA[".$namevalue."]]></name>";
 			if(is_null($items))

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- mobac-ignore: id folder overlay region id north south east west -->
+<customMapSource>
+	<name><![CDATA[Wanderwege]]></name>
+	<minZoom>7</minZoom>
+	<maxZoom>18</maxZoom>
+	<url><![CDATA[https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.swisstlm3d-wanderwege/default/current/3857/{$z}/{$x}/{$y}.png]]></url>
+	<region>
+        <north>47.9</north>
+        <south>45.7</south>
+        <east>10.6</east>
+        <west>5.9</west>
+   </region>
+</customMapSource>

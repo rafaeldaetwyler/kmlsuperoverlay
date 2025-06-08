@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- mobac-ignore: id folder overlay region id north south east west -->
-<customMapSource>
-	<name><![CDATA[Waymarkedtrails Hiking [Overlay]]]></name>
-	<minZoom>5</minZoom>
-	<maxZoom>20</maxZoom>
-	<url><![CDATA[https://tile.waymarkedtrails.org/hiking/{$z}/{$x}/{$y}.png]]></url>
-	<overlay>true</overlay>
-</customMapSource>

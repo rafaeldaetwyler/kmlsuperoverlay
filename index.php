@@ -16,7 +16,7 @@
 	// !! with ending '/'
 	define("MAP_SOURCE_ROOT","./mapsources/");
 	// !! with ending '/'
-	define("URL_BASE","/kmlsuperoverlay/");
+	define("URL_BASE","/");
 	// enable (slow & higher memory usage) or disable kml clean & format with tidy extension
 	define("TIDY_KML",false);
 	// enable kml indent if TIDY_KML == false
@@ -34,5 +34,5 @@
 	*/
 	define("PROJ_BACKEND","PHPPROJ");
 
-	KmlSuperOverlay::controller(array_filter(explode("/",explode(URL_BASE,$_REQUEST['qs'])[1])),URL_BASE);
+	KmlSuperOverlay::controller(array_filter(explode("/",$_REQUEST['qs'])),URL_BASE);
 ?>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- mobac-ignore: id folder overlay region id north south east west -->
 <customMapSource>
-	<name><![CDATA[CH - Topo]]></name>
+	<name><![CDATA[Wildruhezonen]]></name>
 	<minZoom>7</minZoom>
 	<maxZoom>18</maxZoom>
-	<url><![CDATA[https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{$z}/{$x}/{$y}.jpeg]]></url>
+	<url><![CDATA[https://wmts.geo.admin.ch/1.0.0/ch.bafu.wrz-wildruhezonen_portal/default/current/3857/{$z}/{$x}/{$y}.png]]></url>
 	<region>
         <north>47.9</north>
         <south>45.7</south>
